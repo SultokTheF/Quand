@@ -1,11 +1,12 @@
 import React from "react";
 
-import { Home } from "../modules/product";
+import { Home, About } from "../modules/product";
 
 const MainPage: React.FC = () => {
   return (
     <>
       <Home/>
+      <About/>
     </>
   );
 }

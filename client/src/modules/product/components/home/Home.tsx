@@ -1,6 +1,5 @@
 import React, {useEffect} from 'react'
 import './Home.css'
-// @ts-ignore 
 import Aos from "aos";
 import 'aos/dist/aos.css';
 

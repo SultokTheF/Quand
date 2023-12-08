@@ -4,6 +4,8 @@ import './styles/Navbar.css';
 import {AiFillCloseCircle} from 'react-icons/ai';
 import {TbGridDots} from 'react-icons/tb';
 
+// import Logo from "../../assets/images/output-onlinepngtools.png";
+
 import { Link } from "react-router-dom";
 
 const Navbar:React.FC = () => {
@@ -34,7 +36,7 @@ const Navbar:React.FC = () => {
       <header className={transparent}>
 
         <div className="logoDiv">
-          <a href="/" className="logo flex"><h1>ТОО Sultaniyar</h1></a>
+          <a href="/" className="logo flex"><h1>Quand Factory</h1></a>
        </div>
 
         <div className={active}>
