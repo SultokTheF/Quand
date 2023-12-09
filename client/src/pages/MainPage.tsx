@@ -1,12 +1,13 @@
 import React from "react";
 
-import { Home, About } from "../modules/product";
+import { Home, About, Footer } from "../modules/product";
 
 const MainPage: React.FC = () => {
   return (
     <>
       <Home/>
       <About/>
+      <Footer/>
     </>
   );
 }
