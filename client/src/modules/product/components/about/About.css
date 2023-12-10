@@ -35,7 +35,7 @@
 }
 .about .secContainer .videoCard {
   margin-top: 2rem;
-  /* background: var( --photoMask ), url(../../assets/images/CardBg.jpg); */
+  background: var( --photoMask ), url(../../assets/images/video_banner.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

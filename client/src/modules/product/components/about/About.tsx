@@ -5,7 +5,7 @@ import './About.css'
 // import Development from '../../assets/images/info.png'
 // import Field from '../../assets/images/choice.png'
 
-// import video from '../../assets/video/AldiyarFlex.MOV'
+import video from '../../assets/videos/laser_cutting.mp4';
 
 import Handshake from '../../assets/images/handshake.png';
 import Quality from '../../assets/images/quality.png';
@@ -54,13 +54,13 @@ const About: React.FC = () => {
       <div className="videoCard container">
         <div className=" cardContent grid">
           <div data-aos="fade-right" className="cardText">
-            <h2>QUSH</h2>
-            <p>Quantitative, Qualitative and Quick</p>
+            <h2>Quand</h2>
+            <p>Мастерство Лазерной Точности</p>
           </div>
 
           <div data-aos="fade-left" className="cardVideo">
             <video autoPlay muted loop>
-              <source type='video/mp4' />
+              <source src={video} type='video/mp4' />
             </video>
           </div>
         </div>
