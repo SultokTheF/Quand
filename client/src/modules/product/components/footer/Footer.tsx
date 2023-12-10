@@ -25,9 +25,9 @@ import 'aos/dist/aos.css'
           </div>
 
           <div  className="socials flex">
-              <ImFacebook className='icon'/>
+              {/* <ImFacebook className='icon'/>
               <BsTwitter className='icon'/>
-              <a href='https://www.instagram.com/qush_kz/'><AiFillInstagram className="icon"/></a>
+              <a href='https://www.instagram.com/qush_kz/'><AiFillInstagram className="icon"/></a> */}
           </div>
          </div>
 
@@ -44,19 +44,19 @@ import 'aos/dist/aos.css'
          <div data-aos="fade-up" data-aos-duration="3000" className="footerLinks">
           <span className="linkTitle">Полезные ссылки</span>
             <li>
-              <a href="/field">Список полей</a>
+              <a href="/field">Список товров</a>
             </li>
             <li>
-              <a href="#">Карта</a>
+              <a href="#">Оставить отзыв</a>
             </li>
             <li>
-              <a href="#">Популярные места</a>
+              <a href="#">Сделать заказ</a>
             </li>
          </div>
-         <div className="footerLinks">
+         <div data-aos="fade-up" data-aos-duration="3000" className="footerLinks">
           <span className="linkTitle">Контакты</span>
-           <span className='phone'>+7 707 109 88 41</span>
-           <span className="email">220548@astanait.edu.kz</span>
+           <span className='phone'>+7 771 595 64 77</span>
+           <span className="email">zkhanat@mail.ru</span>
           
          </div>
       </div> 
