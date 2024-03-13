@@ -13,7 +13,7 @@ const App: React.FC = () => {
       <Navbar/>
       <Routes>
         <Route path="/" element={ <MainPage />} />
-        <Route path="dashboard" element={ <ProductListPage />} />
+        <Route path="/dashboard" element={ <ProductListPage />} />
       </Routes>
     </>
   );
