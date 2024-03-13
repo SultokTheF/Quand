@@ -31,7 +31,7 @@ import 'aos/dist/aos.css'
           </div>
          </div>
 
-         <div data-aos="fade-up" data-aos-duration="2500" className="footerLinks">
+         <div data-aos="fade-up" data-aos-duration="2000" className="footerLinks">
           <span className="linkTitle">Информация</span>
             <li>
               <a href="/#main">Главная</a>
@@ -41,7 +41,7 @@ import 'aos/dist/aos.css'
             </li>
           
          </div>
-         <div data-aos="fade-up" data-aos-duration="3000" className="footerLinks">
+         <div data-aos="fade-up" data-aos-duration="2500" className="footerLinks">
           <span className="linkTitle">Полезные ссылки</span>
             <li>
               <a href="/field">Список товров</a>

@@ -19,7 +19,7 @@ const Home: React.FC = () => {
             Сделаем любые товары и продукты из фанеры
           </p>
           <button data-aos="fade-up" data-aos-duration="3000" className="btn">
-            <a href="/field">Начать</a>
+            <a href="/dashboard">Начать</a>
           </button>
         </div>
       </div>
