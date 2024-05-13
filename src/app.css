@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -8,9 +8,9 @@
     transition: .3s ease;
 }
 
-:root{
+:root {
     --PrimaryColor: hsl(26, 93%, 50%);
-    --HoverColor: hsl(26, 90%, 42%); 
+    --HoverColor: hsl(26, 90%, 42%);
     --whiteColor: hsl(0, 0%, 100%);
     --blackColor: hsl(0, 0%, 18%);
     --textColor: hsl(240, 1%, 48%);
@@ -18,43 +18,43 @@
     --greyBg: hsl(0, 0%, 96%);
     --greyText: rgb(190, 190, 190);
     --inputColor: hsl(330, 12%, 97%);
-    --boxShadow:  0 2px 8px 2px rgba(178, 178, 178, 0.189);
+    --boxShadow: 0 2px 8px 2px rgba(178, 178, 178, 0.189);
 }
 
 
-a{
+a {
     text-decoration: none;
 }
 
-li{
+li {
     list-style: none;
 }
 
-.section{
+.section {
     padding: 4rem 0 2rem;
- }
+}
 
-.container{
+.container {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
 }
 
-.icon{
+.icon {
     font-size: 2rem;
     cursor: pointer;
 }
 
-.flex{
+.flex {
     display: flex;
     align-items: center;
 }
 
-.grid{
+.grid {
     display: grid;
     align-items: center;
 }
 
-.btn{
+.btn {
     padding: .4rem 1.5rem;
     background: var(--PrimaryColor);
     border: none;
@@ -63,107 +63,111 @@ li{
     cursor: pointer;
 }
 
-.btn a{
- color: var(--whiteColor);
- font-weight: 500;
+.btn a {
+    color: var(--whiteColor);
+    font-weight: 500;
 }
 
-.btn:hover{
+.btn:hover {
     background: var(--HoverColor);
 }
 
-.btn:hover a{
+.btn:hover a {
     color: var(--whiteColor);
 }
 
-.secIntro{
+.secIntro {
     max-width: 70%;
     text-align: center;
     margin: 0 auto 2rem;
-    
+
 }
-.secIntro .secTitle{
+
+.secIntro .secTitle {
     color: var(--blackColor);
     line-height: 1.5rem;
     padding-bottom: .5rem;
 }
 
-.secIntro p{
+.secIntro p {
     font-size: 13px;
     color: var(--textColor);
     font-weight: 500;
 }
 
 
-img, video{
-width: 100%;
-height: auto;
+img,
+video {
+    width: 100%;
+    height: auto;
 }
 
-input{
+input {
     font-size: 100%;
 }
 
 
-::selection{
+::selection {
     background: var(--PrimaryColor);
     color: var(--whiteColor);
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     width: 10px;
     background: var(--greyBg);
 }
-::-webkit-scrollbar-thumb{
+
+::-webkit-scrollbar-thumb {
     background: var(--PrimaryColor);
     border-radius: 10px;
 }
 
 @media screen and (min-width: 556px) {
 
-    .mainContent, .singlePost{
-        grid-template-columns: repeat(2,1fr);
-    } 
+    .mainContent,
+    .singlePost {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media screen and (min-width: 884px) {
-    .mainContent{
-        grid-template-columns: repeat(3,1fr);
-    } 
+    .mainContent {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 
 @media screen and (min-width: 1024px) {
-    .container{
+    .container {
         width: 75% !important;
         margin: auto !important;
     }
 
-    .section{
+    .section {
         padding: 5rem 0 3rem;
     }
 
-    .secIntro{
+    .secIntro {
         margin: 0 auto 3rem;
-        
+
     }
 
-    .secIntro .secTitle{
+    .secIntro .secTitle {
         line-height: 2rem;
         padding-bottom: 1rem;
         font-size: 2.2rem;
     }
 
-    .secIntro p{
+    .secIntro p {
         font-size: 15px;
 
     }
 
-    
+
 }
 
-@media screen and (min-width: 2560px){
-    body{
+@media screen and (min-width: 2560px) {
+    body {
         zoom: 1.7;
     }
 }

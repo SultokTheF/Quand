@@ -11,13 +11,13 @@ import Blog from './Components/Blog/Blog'
 const App = () => {
   return (
     <>
-    <Navbar/>
-    <Home/>
-    <Popular/>
-    <Offer/>
-    <About/>
-    <Blog/>
-    <Footer/>
+      <Navbar />
+      <Home />
+      <Popular />
+      <Offer />
+      <About />
+      <Blog />
+      <Footer />
     </>
   )
 }
