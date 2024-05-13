@@ -30,35 +30,26 @@ const Navbar = () => {
       <header className={transparent}>
 
         <div className="logoDiv">
-          <a href="#" className="logo flex"><h1><SiYourtraveldottv className='icon' />  Dot</h1></a>
+          <a href="#" className="logo flex"><h1>Quand</h1></a>
         </div>
 
         <div className={active}>
           <ul onClick={removeNav} className="navLists flex">
             <li className="navItem">
-              <a href="#" className="navLink">Home</a>
+              <a href="#home" className="navLink">Главная</a>
             </li>
             <li className="navItem">
-              <a href="#" className="navLink">Products</a>
+              <a href="#" className="navLink">Услуги</a>
             </li>
             <li className="navItem">
-              <a href="#" className="navLink">Resources</a>
+              <a href="#" className="navLink">Предложения</a>
             </li>
             <li className="navItem">
-              <a href="#" className="navLink">Contact </a>
+              <a href="#" className="navLink">Контакты</a>
             </li>
             <li className="navItem">
-              <a href="#" className="navLink">Blog</a>
+              <a href="#" className="navLink">Дополнительная информация</a>
             </li>
-
-            {/* <div className="headerBtns flex">
-              <button className="btn loginBtn">
-                <a href="#">Login</a>
-              </button>
-              <button className="btn">
-                <a href="#">Sign Up</a>
-              </button>
-              </div> */}
           </ul>
           <div onClick={removeNav} className="closeNavbar">
             <AiFillCloseCircle className='icon' />

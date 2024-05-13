@@ -124,7 +124,7 @@
 }
 
 .activeHeader {
-  background: var(--textColor);
+  background: var(--activeNavbarBg);
   box-shadow: var(--boxShadow);
 }
 

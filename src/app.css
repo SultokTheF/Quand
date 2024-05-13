@@ -15,6 +15,7 @@
     --blackColor: hsl(0, 0%, 18%);
     --textColor: hsl(240, 1%, 48%);
     --whiteColorDeam: hsl(0, 0%, 93%);
+    --activeNavbarBg: hsla(26, 93%, 50%, 0.5);
     --greyBg: hsl(0, 0%, 96%);
     --greyText: rgb(190, 190, 190);
     --inputColor: hsl(330, 12%, 97%);
