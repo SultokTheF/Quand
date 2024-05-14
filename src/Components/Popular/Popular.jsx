@@ -1,14 +1,11 @@
 import React, { useEffect } from 'react'
 import './popular.css'
-import { BsArrowRightShort } from 'react-icons/bs'
-import { BsArrowLeftShort } from 'react-icons/bs'
-import { BsDot } from 'react-icons/bs'
 
 // Images ======================>
-import img2 from '../../Assets/image (2).jpg'
-import img5 from '../../Assets/image (5).jpg'
-import img9 from '../../Assets/image (5).png'
-import img7 from '../../Assets/image (7).jpg'
+import img2 from '../../Assets/Souvenirs.jpg'
+import img5 from '../../Assets/ad.jpg'
+import img9 from '../../Assets/Model.png'
+import img7 from '../../Assets/Furnitures.png'
 
 // import AOS ======================>
 import Aos from 'aos'
@@ -22,34 +19,30 @@ const Data = [
   {
     id: 1,
     imgSrc: img2,
-    destTitle: 'Machu Picchu',
-    location: 'Peru',
-    grade: 'CULTURAL RELAX ',
+    destTitle: 'Сувениры',
+    description: 'Создание уникальных и оригинальных подарков, которые будут выражать индивидуальность и характер клиента'
   },
 
   {
     id: 2,
     imgSrc: img5,
-    destTitle: 'Guanajuato',
-    location: 'Mexico',
-    grade: 'CULTURAL RELAX ',
+    destTitle: 'Рекламные материалы',
+    description: 'Разработка и изготовление рекламных элементов, таких как вывески, логотипы, стенды, баннеры и другие элементы для продвижения бизнеса'
   },
 
   {
     id: 3,
     imgSrc: img7,
-    destTitle: 'Angkor Wat',
-    location: 'Cambodia',
-    grade: 'CULTURAL RELAX ',
+    destTitle: 'Мебель',
+    description: 'Изготовление дизайнерской мебели, элементов интерьера, декоративных панелей и других предметов для оформления помещений'
   },
 
 
   {
     id: 4,
     imgSrc: img9,
-    destTitle: 'Taj Mahal',
-    location: 'India',
-    grade: 'CULTURAL RELAX ',
+    destTitle: 'Производство деталей',
+    description: 'Создание деталей и элементов для прототипирования новых продуктов, моделирования и проектирования различных изделий и механизмов'
   }
 
 ]
@@ -67,16 +60,11 @@ const Popular = () => {
 
           <div data-aos="fade-right" data-aos-duration="2500" className="textDiv">
             <h2 className='secTitle'>
-              Popular Destinations
+              Популярные услуги
             </h2>
             <p>
-              From historical cities to natural specteculars, come see the best of the world!
+            От детских мечтаний до великих проектов
             </p>
-          </div>
-
-          <div data-aos="fade-left" data-aos-duration="2500" className="iconsDiv flex">
-            <BsArrowLeftShort className="icon leftIcon" />
-            <BsArrowRightShort className="icon" />
           </div>
         </div>
 
@@ -84,7 +72,7 @@ const Popular = () => {
           {/* Single Destination from the map Array */}
 
           {
-            Data.map(({ id, imgSrc, destTitle, location, grade }) => {
+            Data.map(({ id, imgSrc, destTitle, description }) => {
               return (
                 <div key={id} data-aos="fade-up" className="singleDestination">
                   <div className="destImage">
@@ -96,10 +84,10 @@ const Popular = () => {
                         {destTitle}
                       </h3>
                       <p>
-                        {location}
+                        {description}
                       </p>
 
-                      <BsArrowRightShort className='icon' />
+                      {/* <BsArrowRightShort className='icon' /> */}
 
                     </div>
                   </div>
@@ -111,14 +99,8 @@ const Popular = () => {
 
                     <div className="destText flex">
                       <h6>
-                        {location}
+                        {destTitle}
                       </h6>
-                      <span className='flex'>
-                        <span className="dot">
-                          <BsDot className='icon' />
-                        </span>
-                        Dot
-                      </span>
                     </div>
                   </div>
                 </div>
