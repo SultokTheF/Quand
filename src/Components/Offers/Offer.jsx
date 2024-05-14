@@ -54,7 +54,7 @@ const Offer = () => {
 
 
   return (
-    <section className='offer section container'>
+    <section id='offers' className='offer section container'>
       <div className="secContainter">
 
         <div data-aos="fade-up" data-aos-duration="2000" className="secIntro">

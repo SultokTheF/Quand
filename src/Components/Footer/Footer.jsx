@@ -15,7 +15,7 @@ const Footer = () => {
   }, [])
 
   return (
-    <div className='footer'>
+    <div id='footer' className='footer'>
       <div className="secCotainer container grid">
         <div data-aos="fade-up" data-aos-duration="2000" className="logoDiv">
           <div className="footerLogo">

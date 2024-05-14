@@ -53,7 +53,7 @@ const Popular = () => {
     Aos.init({ duration: 2000 })
   }, [])
   return (
-    <section className='popular section container'>
+    <section id='popular' className='popular section container'>
       <div className="secContainter">
 
         <div className="secHeader flex">

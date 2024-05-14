@@ -39,17 +39,20 @@ const Navbar = () => {
               <a href="#home" className="navLink">Главная</a>
             </li>
             <li className="navItem">
-              <a href="#" className="navLink">Услуги</a>
+              <a href="#popular" className="navLink">Услуги</a>
             </li>
             <li className="navItem">
-              <a href="#" className="navLink">Предложения</a>
+              <a href="#offers" className="navLink">Предложения</a>
             </li>
             <li className="navItem">
-              <a href="#" className="navLink">Контакты</a>
+              <a href="#about" className="navLink">О нас</a>
             </li>
             <li className="navItem">
+              <a href="#footer" className="navLink">Контакты</a>
+            </li>
+            {/* <li className="navItem">
               <a href="#" className="navLink">Дополнительная информация</a>
-            </li>
+            </li> */}
           </ul>
           <div onClick={removeNav} className="closeNavbar">
             <AiFillCloseCircle className='icon' />
