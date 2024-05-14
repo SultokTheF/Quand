@@ -9,9 +9,9 @@ import { MdLocationOn } from 'react-icons/md'
 
 
 // Images ======================>
-import img6 from '../../Assets/image (6).jpg'
-import img7 from '../../Assets/image (7).jpg'
-import img8 from '../../Assets/image (8).jpg'
+import img6 from '../../Assets/workshop.jpg'
+import img7 from '../../Assets/kids_workshop.png'
+import img8 from '../../Assets/kids.png'
 // Import Aos ======================>
 import Aos from 'aos'
 import 'aos/dist/aos.css'
@@ -23,25 +23,25 @@ const Data = [
   {
     id: 1,
     imgSrc: img8,
-    destTitle: 'Machu Picchu',
-    location: 'Peru',
-    price: '$7,452'
+    destTitle: 'Радость и творчество для детей',
+    describtion: 'Создайте свой уникальный детский мир с персонализированными игрушками, пазлами и декоративными элементами для комнаты вашего малыша! Получите скидку 20% на первый заказ для детей и поддержите их креативность и воображение',
+    discount: '20% Off'
   },
 
   {
     id: 2,
     imgSrc: img6,
-    destTitle: 'Guanajuato',
-    location: 'Mexico',
-    price: '$2,452'
+    destTitle: 'Образование без границ',
+    describtion: 'Поддержите образование и развитие современных технологий с нашими услугами по созданию учебных пособий, прототипов и образовательных игр. Специальное предложение для образовательных учреждений - получите бесплатную консультацию и 15% скидку на первый заказ!',
+    discount: '15% Off'
   },
 
   {
     id: 3,
     imgSrc: img7,
-    destTitle: 'Angkor Wat',
-    location: 'Cambodia',
-    price: '$4,400',
+    destTitle: 'Радость и творчество для детей',
+    describtion: 'Создайте уют в своем доме с индивидуально разработанной мебелью и элементами интерьера по доступным ценам. Скидка 10% для социально уязвимых групп населения, помогая им сделать свои жилища комфортнее и уютнее.',
+    discount: '10% Off'
   },
 
 ]
@@ -59,10 +59,10 @@ const Offer = () => {
 
         <div data-aos="fade-up" data-aos-duration="2000" className="secIntro">
           <h2 className='secTitle'>
-            Special Offers
+            Специальные предложения
           </h2>
           <p>
-            From historical cities to natural specteculars, come see the best of the world!
+            Воплощаем радость, знания и заботу в каждом детале!
           </p>
 
         </div>
@@ -71,53 +71,27 @@ const Offer = () => {
           {/* Single Offer from the map Array */}
 
           {
-            Data.map(({ id, imgSrc, destTitle, location, price }) => {
+            Data.map(({ id, imgSrc, destTitle, describtion, discount }) => {
               return (
                 <div key={id} data-aos="fade-up" data-aos-duration="3000" className="singleOffer">
                   <div className="destImage">
                     <img src={imgSrc} alt={destTitle} />
 
                     <span className="discount">
-                      30% Off
+                      {discount}
                     </span>
                   </div>
 
                   <div className="offerBody">
                     <div className="price flex">
                       <h4>
-                        {price}
+                        {destTitle}
                       </h4>
-                      <span className="status">
-                        For Rent
-                      </span>
                     </div>
 
                     <div className="amenities flex">
-                      <div className="singleAmenity flex">
-                        <MdKingBed className="icon" />
-                        <small>2 Beds</small>
-                      </div>
-                      <div className="singleAmenity flex">
-                        <MdBathtub className="icon" />
-                        <small>1 Bath</small>
-                      </div>
-                      <div className="singleAmenity flex">
-                        <FaWifi className="icon" />
-                        <small>Wi-Fi</small>
-                      </div>
-                      <div className="singleAmenity flex">
-                        <MdAirportShuttle className="icon" />
-                        <small>Shuttle</small>
-                      </div>
+                      {describtion}
                     </div>
-
-                    <div className="location flex">
-                      <MdLocationOn className="icon" />
-                      <small> 450 Vine St #310,{location}</small>
-                    </div>
-
-                    <button className='btn flex'>View Details <BsArrowRightShort className='icon' /></button>
-
                   </div>
                 </div>
               )
