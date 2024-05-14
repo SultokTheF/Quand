@@ -19,34 +19,34 @@ const Footer = () => {
       <div className="secCotainer container grid">
         <div data-aos="fade-up" data-aos-duration="2000" className="logoDiv">
           <div className="footerLogo">
-            <a href="#" className="logo flex"><h1><SiYourtraveldottv className='icon' />  Dot</h1></a>
+            <a href="#" className="logo flex"><h1>Quand</h1></a>
           </div>
 
-          <div className="socials flex">
+          {/* <div className="socials flex">
             <ImFacebook className="icon" />
             <BsTwitter className="icon" />
             <AiFillInstagram className="icon" />
-          </div>
+          </div> */}
         </div>
 
         <div data-aos="fade-up" data-aos-duration="2500" className="footerLinks">
-          <span className="linkTitle">Information</span>
+          <span className="linkTitle">Информация</span>
           <li>
-            <a href="#">Home</a>
+            <a href="#home">Главная</a>
           </li>
           <li>
-            <a href="#">Explore</a>
+            <a href="#popular">Услуги</a>
           </li>
           <li>
-            <a href="#">Travel</a>
+            <a href="#offers" className="navLink">Предложения</a>
           </li>
           <li>
-            <a href="#">Blog</a>
+            <a href="#about">О нас</a>
           </li>
 
         </div>
         <div data-aos="fade-up" data-aos-duration="3000" className="footerLinks">
-          <span className="linkTitle">Helpful Links</span>
+          {/* <span className="linkTitle">Helpful Links</span>
           <li>
             <a href="#">Destination</a>
           </li>
@@ -58,11 +58,11 @@ const Footer = () => {
           </li>
           <li>
             <a href="#">Privacy</a>
-          </li>
+          </li> */}
 
         </div>
         <div data-aos="fade-up" data-aos-duration="3500" className="footerLinks">
-          <span className="linkTitle">Contact</span>
+          <span className="linkTitle">Контакты</span>
           <span className='phone'>+7 707 109 88 41</span>
           <span className="email">sultok.003@gmail.com</span>
 
